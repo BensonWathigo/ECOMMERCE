@@ -20,7 +20,22 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 50 ),
         
             // welcome. You've been missed.
-            
+            Text(
+              "Welcome, you've been missed.",
+              style: TextStyle(
+                color: Color.grey[700],
+                fontSize: 16,
+              ),
+            )
+            const SizedBox(height: 50),
+
+            // Username verified
+            my_textField(),
+            const SizedBox(height: 50),
+
+
+            //password textified 
+            my_textField(), 
         
             // forgot password 
         
