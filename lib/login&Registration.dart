@@ -41,6 +41,23 @@ class LoginPage extends StatelessWidget {
 
             const SizedBox(height: 25),
 
+            // Username textified
+            MyTextField(
+              controller: usernameController,
+              hintText: 'username',
+              obscureText: true,
+            ),
+            const SizedBox(height: 10),
+
+            //password textified
+            MyTextField(
+              controller: passwordController,
+              hintText: 'password',
+              obscureText: true,
+            ), //my text field
+
+            const SizedBox(height: 50),
+
             // forgot password
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -55,6 +72,11 @@ class LoginPage extends StatelessWidget {
             ),
 
             const SizedBox(height: 25),
+
+            // signin button
+            MyButton(
+              onTap: signUserIn,
+            ),
 
             //or continue with
 
