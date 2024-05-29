@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:modernlogintute/components/my_button.dart';
-import 'package:modernlogintute/components/my_textfield.dart';
+import 'package:shopeasy/componenets/my_button.dart';
+import 'package:shopeasy/componenets/my_textField.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
