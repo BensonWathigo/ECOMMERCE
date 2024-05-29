@@ -1,6 +1,6 @@
 // Importing the necessary Flutter material package
 import 'package:flutter/material.dart';
-import 'package:shopeasy/login&Registration.dart';
+import 'Pages/login&Registration.dart';
 
 void main() {
   // Entry point of the application, runApp function starts the app

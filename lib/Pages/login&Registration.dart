@@ -3,7 +3,7 @@ import 'package:modernlogintute/components/my_button.dart';
 import 'package:modernlogintute/components/my_textfield.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   //Text editing controllers
   final usernameController = TextEditingController();
@@ -131,7 +131,9 @@ class LoginPage extends StatelessWidget {
                 Text(
                   'Register now!',
                   style: TextStyle(
-                      color: Colors.yellow[400], fontWeight: FontWeight.bold),
+                    color: Colors.yellow[400],
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             )
