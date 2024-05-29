@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopeasy/componenets/my_button.dart';
 import 'package:shopeasy/componenets/my_textField.dart';
+import 'package:shopeasy/main.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -10,7 +12,6 @@ class LoginPage extends StatelessWidget {
   final passwordController = TextEditingController();
 
   //sign user in method
-  void signUserIn() {}
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +66,7 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Text(
                     'Forgot password',
-                    style: TextStyle(color: Colors.amber.shade200),
+                    style: TextStyle(color: Colors.blue[600]),
                   ),
                 ],
               ),
@@ -75,7 +76,9 @@ class LoginPage extends StatelessWidget {
 
             // signin button
             MyButton(
-              onTap: signUserIn,
+              onTap: () {
+                Get.offAllNamed("/homepage");
+              },
             ),
 
             //or continue with
@@ -114,7 +117,14 @@ class LoginPage extends StatelessWidget {
               children: [
                 //Google sign in buttons
                 Image.asset(
-                  'lib\Images\Google.jpg',
+                  'lib/Images/Google.jpg',
+                  height: 72,
+                ),
+                Container(
+                  width: 10,
+                ),
+                Image.asset(
+                  'lib/Images/Apple.jpg',
                   height: 72,
                 ),
               ],
@@ -131,7 +141,7 @@ class LoginPage extends StatelessWidget {
                 Text(
                   'Register now!',
                   style: TextStyle(
-                    color: Colors.yellow[400],
+                    color: Colors.grey[400],
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -142,4 +152,8 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
+
+  // void home() {
+  //   Get.offAllNamed('/');
+  // }
 }

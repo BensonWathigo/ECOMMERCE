@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFF5F5DC), // Background color
       ),
       debugShowCheckedModeBanner: false, // Remove debug banner
-      home: const MyHomePage(), // Set the home page
+      home: LoginPage(), // Set the home page
     );
   }
 }
